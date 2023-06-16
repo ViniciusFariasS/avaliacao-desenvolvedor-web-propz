@@ -1,0 +1,62 @@
+<app-header></app-header>
+
+<div class="landingPage">
+    <div class="landingPage__description">
+        <p>
+            As lojas Proipz agora possuem um espaço beleza onde você encontra tudo para montar looks únicos.
+        </p>
+        <p>
+            Venha conhecer!
+        </p>
+    </div>
+    <div class="landingPage__content">
+        <div id="carouselExample" class="carousel slide landingPage__content--carousel" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <ng-container *ngFor="let item of beautyItems; let i = index">
+                    <div [class.active]="i === 0" class="carousel-item landingPage__content--carousel--items">
+                        <a [href]="item.url" target="_blank">
+                            <img [src]="item.urlImage" class="landingPage__content--carousel--items--image">
+                            <div class="landingPage__content--carousel--items--title">
+                                <span>{{ item.name }}</span>
+                                <p>{{ item.size }}</p>
+                            </div>
+                            <div class="landingPage__content--carousel--items--value">
+                                <div>
+                                    <span class="landingPage__content--carousel--items--value">10x R$
+                                        <h1>{{
+                                            (item.value/10).toFixed(2)
+                                            }}</h1>
+                                    </span>
+                                    <span class="landingPage__content--carousel--items--value">15x R$
+                                        <h1>
+                                            {{
+                                            (item.value/15).toFixed(2)
+                                            }}</h1>
+                                    </span>
+                                </div>
+                                <div class="landingPage__content--carousel--items--totalValue">
+                                    <div class="landingPage__content--carousel--items--totalValue-cards">
+                                        <img src="assets/images/visa_logo.png" alt="">
+                                        <img src="assets/images/masterCard_logo.png" alt="">
+                                    </div>
+                                    <span class="landingPage__content--carousel--items--value">ou R$ {{ item.value }} à
+                                        vista</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </ng-container>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+</div>
+
+<app-footer></app-footer>

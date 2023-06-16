@@ -1,0 +1,169 @@
+.landingPage
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+
+    @media screen and (max-width: 1000px)
+        &__description
+            width: 800px !important
+            font-size: 16px !important
+        &__content
+            &--carousel
+                .carousel-inner
+                    width: auto
+                    max-width: 800px !important
+                &--items
+                    a
+                        width: 800px !important
+                    &--image
+                        width: 350px !important
+                    &--title
+                        width: 100% !important
+                        span
+                            font-size: 14px !important
+                        p
+                            font-size: 14px !important
+                    &--value
+                        width: 100% !important
+                    &--totalValue
+                        span
+                            font-size: 14px
+
+    @media screen and (max-width: 999px)
+        &__description
+            width: 400px !important
+            font-size: 16px !important
+            padding: 8px 0 0 0 !important
+
+        &__content
+            &--carousel
+                .carousel-inner
+                    width: auto
+                    max-width: 440px !important
+                &--items
+                    a
+                        width: 440px !important
+                    &--image
+                        width: 300px !important
+                    &--title
+                        width: 100% !important
+                        span
+                            font-size: 14px !important
+                        p
+                            font-size: 14px !important
+                    &--value
+                        width: 100% !important
+                    &--totalValue
+                        span
+                            font-size: 14px
+
+    &__description
+        width: 700px
+        text-align: center
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        padding: 16px
+        font-size: 24px
+        color: #40494F
+    &__content
+        position: relative
+        overflow: hidden
+        padding: 48px 0
+        width: 100%
+        display: flex
+        justify-content: center
+        &::after
+            content: ''
+            position: absolute
+            top: 0
+            bottom: 0
+            width: 100%
+            z-index: -1
+        &::before
+            content: ''
+            position: absolute
+            top: 0
+            bottom: 0
+            width: 100%
+            z-index: -1
+        &:before
+            left: 0
+            background: linear-gradient(-180deg, transparent, transparent 20px, #F69E18 0px, #FFF 80%)
+
+        &--carousel
+            display: flex
+            justify-content: center
+            align-items: center
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4)
+            button
+                width: auto
+                height: auto
+                color: #000
+                padding: 0 24px
+                .carousel-control-next-icon
+                    background-image: none
+                    width: 0
+                    height: 0
+                    border-top: 16px solid transparent
+                    border-bottom: 16px solid transparent
+                    border-left: 24px solid #F69E18
+                .carousel-control-prev-icon
+                    background-image: none
+                    width: 0
+                    height: 0
+                    border-top: 16px solid transparent
+                    border-bottom: 16px solid transparent
+                    border-right: 24px solid #F69E18
+
+            .carousel-inner
+                width: auto
+                max-width: 900px
+            &--items
+                a
+                    width: 900px
+                    padding: 16px
+                    border-radius: 8px
+                    background-color: #FFFFFF
+                    display: flex
+                    flex-direction: column
+                    align-items: center
+                    height: auto
+                    text-decoration: none
+                &--image
+                    width: 600px
+                &--title
+                    width: 80%
+                    margin-top: 24px
+                    display: flex
+                    align-items: center
+                    justify-content: space-between
+                    color: #000
+                    border-bottom: 2px solid #f2f2f2
+                    padding: 8px
+                    span
+                        font-size: 16px
+                        margin-bottom: 0 !important
+                        text-decoration: none
+                    p
+                        margin-bottom: 0 !important
+                &--value
+                    width: 80%
+                    padding: 8px
+                    display: flex
+                    justify-content: space-between
+                    align-items: center
+                    color: #000
+                &--totalValue
+
+                    span
+                        font-size: 14px
+                    &-cards
+                        display: flex
+                        align-items: center
+                        color: #000
+                        margin-bottom: 24px
+                        img
+                            width: 40px
