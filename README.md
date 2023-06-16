@@ -1,27 +1,39 @@
 # AvaliacaoDesenvolvedorWebPropz
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.0.2.
+Este é um projeto Angular. Este guia vai te ensinar como rodar o projeto assim que você baixar do GitHub.
 
-## Development server
+## Pré-requisitos
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Antes de começar, certifique-se de que o seguinte software esteja instalado em seu sistema:
 
-## Code scaffolding
+- [Node.js](https://nodejs.org) (versão 12 ou superior)
+- [Git](https://git-scm.com)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Configuração
 
-## Build
+Siga os passos abaixo para configurar o projeto:
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+1. Clone o repositório para o seu sistema local usando o comando do Git:
+    git clone https://github.com/ViniciusFariasS/avaliacao-desenvolvedor-web-propz.git
 
-## Running unit tests
+2. Navegue para o diretório do projeto:
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+- cd avaliacao-desenvolvedor-web-propz
 
-## Running end-to-end tests
+3. Instale as dependências do projeto executando o seguinte comando:
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+- npm install
 
-## Further help
+## Rodando o projeto
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Depois de configurar o projeto, você pode executá-lo localmente com os seguintes comandos:
+
+1. Execute o comando a seguir para iniciar o servidor de desenvolvimento:
+
+- ng serve
+
+Isso iniciará o servidor local em `http://localhost:4200` e atualizará automaticamente a página quando houver alterações no código fonte.
+
+2. Abra um navegador da web e acesse `http://localhost:4200` para ver a aplicação em execução.
+
+Espero que este guia seja útil para você começar a usar o projeto. Se tiver alguma dúvida, não hesite em entrar em contato.
